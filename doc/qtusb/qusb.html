@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- qusb.cpp -->
+  <title>QUsb Class | Qt Usb 0.7.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline-simple.css" />
+  <script type="text/javascript">
+    document.getElementsByTagName("link").item(0).setAttribute("href", "style/offline.css");
+    // loading style sheet breaks anchors that were jumped to before
+    // so force jumping to anchor again
+    setTimeout(function() {
+        var anchor = location.hash;
+        // need to jump to different anchor first (e.g. none)
+        location.hash = "#";
+        setTimeout(function() {
+            location.hash = anchor;
+        }, 0);
+    }, 0);
+  </script>
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+<li><a href="../qtdoc/index.html">Qt 0.7</a></li>
+<li>Qt Usb</li>
+<li><a href="qtusb-module.html">C++ Classes</a></li>
+<li>QUsb</li>
+<li id="buildversion">Qt 0.7&#x2e;0 Reference Documentation</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#public-types">Public Types</a></li>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#static-public-members">Static Public Members</a></li>
+<li class="level1"><a href="#protected-slots">Protected Slots</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">QUsb Class</h1>
+<!-- $$$QUsb-brief -->
+<p>This class handles hotplug and device detection. <a href="#details">More...</a></p>
+<!-- @@@QUsb -->
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign">  <span class="preprocessor">#include &lt;QUsb&gt;</span>
+</td></tr><tr><td class="memItemLeft rightAlign topAlign"> qmake:</td><td class="memItemRight bottomAlign"> QT += usb</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <a href="../qtcore/qobject.html">QObject</a></td></tr></table></div><ul>
+<li><a href="qusb-members.html">List of all members, including inherited members</a></li>
+</ul>
+<p><b>Note:</b> All functions in this class are <a href="../qtdoc/threads-reentrancy.html">reentrant</a>.</p>
+<a name="public-types"></a>
+<h2 id="public-types">Public Types</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> class </td><td class="memItemRight bottomAlign"><b><a href="qusb-config.html">Config</a></b></td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> class </td><td class="memItemRight bottomAlign"><b><a href="qusb-id.html">Id</a></b></td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> typedef </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#ConfigList-typedef">ConfigList</a></b></td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> typedef </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#IdList-typedef">IdList</a></b></td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> enum </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#LogLevel-enum">LogLevel</a></b> { logNone, logError, logWarning, logInfo, logDebug, logDebugAll }</td></tr>
+</table></div>
+<a name="properties"></a>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><a href="qusb.html#logLevel-prop">logLevel</a></b> : QUsb::LogLevel</li>
+</ul>
+<a name="public-functions"></a>
+<h2 id="public-functions">Public Functions</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> virtual </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#dtor.QUsb">~QUsb</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#findDevice">findDevice</a></b>(const QUsb::Id &amp;<i>id</i>, const QUsb::IdList &amp;<i>list</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#isPresent">isPresent</a></b>(const QUsb::Id &amp;<i>id</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QUsb::LogLevel </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#logLevel">logLevel</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#setLogLevel">setLogLevel</a></b>(QUsb::LogLevel <i>level</i>)</td></tr>
+</table></div>
+<a name="public-slots"></a>
+<h2 id="public-slots">Public Slots</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#addDevice">addDevice</a></b>(const QUsb::Id &amp;<i>id</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#removeDevice">removeDevice</a></b>(const QUsb::Id &amp;<i>id</i>)</td></tr>
+</table></div>
+<a name="signals"></a>
+<h2 id="signals">Signals</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#deviceInserted">deviceInserted</a></b>(QUsb::Id <i>id</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#deviceRemoved">deviceRemoved</a></b>(QUsb::Id <i>id</i>)</td></tr>
+</table></div>
+<a name="static-public-members"></a>
+<h2 id="static-public-members">Static Public Members</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> QUsb::IdList </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#devices">devices</a></b>()</td></tr>
+</table></div>
+<a name="protected-slots"></a>
+<h2 id="protected-slots">Protected Slots</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#checkDevices">checkDevices</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qusb.html#monitorDevices">monitorDevices</a></b>(const QUsb::IdList &amp;<i>list</i>)</td></tr>
+</table></div>
+<a name="details"></a>
+<!-- $$$QUsb-description -->
+<div class="descr">
+<h2 id="details">Detailed Description</h2>
+<p>Handles USB events and searching. Can be used to monitor events for a list of devices or all system devices.</p>
+</div>
+<p><b>See also </b><a href="qusbdevice.html">QUsbDevice</a>.</p>
+<!-- @@@QUsb -->
+<div class="types">
+<h2>Member Type Documentation</h2>
+<!-- $$$ConfigList -->
+<h3 class="fn" id="ConfigList-typedef"><a name="ConfigList-typedef"></a>typedef QUsb::<span class="name">ConfigList</span></h3>
+<p>List of Config structs.</p>
+<!-- @@@ConfigList -->
+<!-- $$$IdList -->
+<h3 class="fn" id="IdList-typedef"><a name="IdList-typedef"></a>typedef QUsb::<span class="name">IdList</span></h3>
+<p>List of Id structs.</p>
+<!-- @@@IdList -->
+<!-- $$$LogLevel$$$logNone$$$logError$$$logWarning$$$logInfo$$$logDebug$$$logDebugAll -->
+<h3 class="fn" id="LogLevel-enum"><a name="LogLevel-enum"></a>enum QUsb::<span class="name">LogLevel</span></h3>
+<div class="table"><table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><code>QUsb::logNone</code></td><td class="topAlign tblval"><code>0</code></td><td class="topAlign">No debug output</td></tr>
+<tr><td class="topAlign"><code>QUsb::logError</code></td><td class="topAlign tblval"><code>1</code></td><td class="topAlign">Errors only</td></tr>
+<tr><td class="topAlign"><code>QUsb::logWarning</code></td><td class="topAlign tblval"><code>2</code></td><td class="topAlign">Warning and abose</td></tr>
+<tr><td class="topAlign"><code>QUsb::logInfo</code></td><td class="topAlign tblval"><code>3</code></td><td class="topAlign">Info and above</td></tr>
+<tr><td class="topAlign"><code>QUsb::logDebug</code></td><td class="topAlign tblval"><code>4</code></td><td class="topAlign">Everything</td></tr>
+<tr><td class="topAlign"><code>QUsb::logDebugAll</code></td><td class="topAlign tblval"><code>5</code></td><td class="topAlign">Everything + libusb debug output</td></tr>
+</table></div>
+<!-- @@@LogLevel -->
+</div>
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$ -->
+<h3 class="fn fngroupitem" id="logLevel-prop"><a name="logLevel-prop"></a><span class="name">logLevel</span> : <span class="type"><a href="qusb.html#LogLevel-enum">QUsb::LogLevel</a></span></h3>
+<p>Various properties.</p>
+<!-- @@@ -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$addDevice[overload1]$$$addDeviceconstQUsb::Id& -->
+<h3 class="fn" id="addDevice"><a name="addDevice"></a><code>[slot] </code><span class="type">bool</span> QUsb::<span class="name">addDevice</span>(const <span class="type"><a href="qusb-id.html">QUsb::Id</a></span> &amp;<i>id</i>)</h3>
+<p>Add an <i>id</i> device to the list.</p>
+<p>Returns false if device was already in the list, else true.</p>
+<!-- @@@addDevice -->
+<!-- $$$checkDevices[overload1]$$$checkDevices -->
+<h3 class="fn" id="checkDevices"><a name="checkDevices"></a><code>[protected slot] </code><span class="type">void</span> QUsb::<span class="name">checkDevices</span>()</h3>
+<p>Check devices present in system.</p>
+<p>This gets called by the internal timer.</p>
+<!-- @@@checkDevices -->
+<!-- $$$deviceInserted[overload1]$$$deviceInsertedQUsb::Id -->
+<h3 class="fn" id="deviceInserted"><a name="deviceInserted"></a><code>[signal] </code><span class="type">void</span> QUsb::<span class="name">deviceInserted</span>(<span class="type"><a href="qusb-id.html">QUsb::Id</a></span> <i>id</i>)</h3>
+<p>This is signal is emited when one or more new devices are detected, providing a <i>list</i>.</p>
+<!-- @@@deviceInserted -->
+<!-- $$$deviceRemoved[overload1]$$$deviceRemovedQUsb::Id -->
+<h3 class="fn" id="deviceRemoved"><a name="deviceRemoved"></a><code>[signal] </code><span class="type">void</span> QUsb::<span class="name">deviceRemoved</span>(<span class="type"><a href="qusb-id.html">QUsb::Id</a></span> <i>id</i>)</h3>
+<p>This is signal is emited when one or more new devices are removed, providing a <i>list</i>.</p>
+<!-- @@@deviceRemoved -->
+<!-- $$$monitorDevices[overload1]$$$monitorDevicesconstQUsb::IdList& -->
+<h3 class="fn" id="monitorDevices"><a name="monitorDevices"></a><code>[protected slot] </code><span class="type">void</span> QUsb::<span class="name">monitorDevices</span>(const <span class="type"><a href="qusb.html#IdList-typedef">QUsb::IdList</a></span> &amp;<i>list</i>)</h3>
+<p>Add a <i>list</i> to monitor.</p>
+<!-- @@@monitorDevices -->
+<!-- $$$removeDevice[overload1]$$$removeDeviceconstQUsb::Id& -->
+<h3 class="fn" id="removeDevice"><a name="removeDevice"></a><code>[slot] </code><span class="type">bool</span> QUsb::<span class="name">removeDevice</span>(const <span class="type"><a href="qusb-id.html">QUsb::Id</a></span> &amp;<i>id</i>)</h3>
+<p>Remove <i>id</i> device from the list.</p>
+<p>Return bool false if device was not in the list, else true.</p>
+<!-- @@@removeDevice -->
+<!-- $$$~QUsb[overload1]$$$~QUsb -->
+<h3 class="fn" id="dtor.QUsb"><a name="dtor.QUsb"></a><code>[virtual] </code>QUsb::<span class="name">~QUsb</span>()</h3>
+<p>Unregister callbacks and close the usb context.</p>
+<!-- @@@~QUsb -->
+<!-- $$$devices[overload1]$$$devices -->
+<h3 class="fn" id="devices"><a name="devices"></a><code>[static] </code><span class="type"><a href="qusb.html#IdList-typedef">QUsb::IdList</a></span> QUsb::<span class="name">devices</span>()</h3>
+<p>Returns all present <code>devices</code>.</p>
+<!-- @@@devices -->
+<!-- $$$findDevice[overload1]$$$findDeviceconstQUsb::Id&constQUsb::IdList& -->
+<h3 class="fn" id="findDevice"><a name="findDevice"></a><span class="type">int</span> QUsb::<span class="name">findDevice</span>(const <span class="type"><a href="qusb-id.html">QUsb::Id</a></span> &amp;<i>id</i>, const <span class="type"><a href="qusb.html#IdList-typedef">QUsb::IdList</a></span> &amp;<i>list</i>) const</h3>
+<p>Search an <i>id</i> device in a device <i>list</i>.</p>
+<p>Return index of the filter, returns -1 if not found.</p>
+<!-- @@@findDevice -->
+<!-- $$$isPresent[overload1]$$$isPresentconstQUsb::Id& -->
+<h3 class="fn" id="isPresent"><a name="isPresent"></a><span class="type">bool</span> QUsb::<span class="name">isPresent</span>(const <span class="type"><a href="qusb-id.html">QUsb::Id</a></span> &amp;<i>id</i>) const</h3>
+<p>Check if <i>id</i> device is present.</p>
+<p>Return bool true if present.</p>
+<!-- @@@isPresent -->
+<!-- $$$logLevel -->
+<h3 class="fn" id="logLevel"><a name="logLevel"></a><span class="type"><a href="qusb.html#LogLevel-enum">QUsb::LogLevel</a></span> QUsb::<span class="name">logLevel</span>() const</h3>
+<p>Get current log level.</p>
+<p><b>Note: </b>Getter function for property logLevel. </p>
+<p><b>See also </b><a href="qusb.html#setLogLevel">setLogLevel</a>().</p>
+<!-- @@@logLevel -->
+<!-- $$$setLogLevel -->
+<h3 class="fn" id="setLogLevel"><a name="setLogLevel"></a><span class="type">void</span> QUsb::<span class="name">setLogLevel</span>(<span class="type"><a href="qusb.html#LogLevel-enum">QUsb::LogLevel</a></span> <i>level</i>)</h3>
+<p>Set log <i>level</i> (only hotplug/detection).</p>
+<p><b>Note: </b>Setter function for property <a href="qusb.html#logLevel">logLevel</a>. </p>
+<p><b>See also </b><a href="qusb.html#logLevel">logLevel</a>().</p>
+<!-- @@@setLogLevel -->
+</div>
+        </div>
+       </div>
+   </div>
+   </div>
+</div>
+<div class="footer">
+   <p>
+   <acronym title="Copyright">&copy;</acronym> 2020 The Qt Company Ltd.
+   Documentation contributions included herein are the copyrights of
+   their respective owners.<br/>    The documentation provided herein is licensed under the terms of the    <a href="http://www.gnu.org/licenses/fdl.html">GNU Free Documentation    License version 1.3</a> as published by the Free Software Foundation.<br/>    Qt and respective logos are trademarks of The Qt Company Ltd.     in Finland and/or other countries worldwide. All other trademarks are property
+   of their respective owners. </p>
+</div>
+</body>
+</html>
