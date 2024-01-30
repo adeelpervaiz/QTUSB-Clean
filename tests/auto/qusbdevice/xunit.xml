@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="8" failures="0" tests="6" name="tst_QUsbDevice">
+  <properties>
+    <property value="5.15.2" name="QTestVersion"/>
+    <property value="5.15.2" name="QtVersion"/>
+    <property value="Qt 5.15.2 (x86_64&#x002D;little_endian&#x002D;llp64 shared (dynamic) release build; by MSVC 2019)" name="QtBuild"/>
+  </properties>
+  <testcase result="pass" name="initTestCase"/>
+  <testcase result="pass" name="constructors">
+    <!-- message="***[ __cdecl QUsbDevice::QUsbDevice(class QObject *) ]***" type="qdebug" -->
+    <!-- message="USB connection already closed" type="qinfo" -->
+    <!-- message="USB connection already closed" type="qinfo" -->
+  </testcase>
+  <testcase result="pass" name="assignment">
+    <!-- message="***[ __cdecl QUsbDevice::QUsbDevice(class QObject *) ]***" type="qdebug" -->
+    <!-- message="USB connection already closed" type="qinfo" -->
+    <!-- message="USB connection already closed" type="qinfo" -->
+  </testcase>
+  <testcase result="pass" name="states">
+    <!-- message="***[ __cdecl QUsbDevice::QUsbDevice(class QObject *) ]***" type="qdebug" -->
+    <!-- message="***[ void __cdecl QUsbDevice::setLogLevel(enum QUsb::LogLevel) ]***" type="qdebug" -->
+  </testcase>
+  <testcase result="pass" name="staticfuncs"/>
+  <testcase result="pass" name="cleanupTestCase"/>
+  <system-err>
+<![CDATA[***[ __cdecl QUsbDevice::QUsbDevice(class QObject *) ]***]]>
+<![CDATA[USB connection already closed]]>
+<![CDATA[USB connection already closed]]>
+<![CDATA[***[ __cdecl QUsbDevice::QUsbDevice(class QObject *) ]***]]>
+<![CDATA[USB connection already closed]]>
+<![CDATA[USB connection already closed]]>
+<![CDATA[***[ __cdecl QUsbDevice::QUsbDevice(class QObject *) ]***]]>
+<![CDATA[***[ void __cdecl QUsbDevice::setLogLevel(enum QUsb::LogLevel) ]***]]>
+  </system-err>
+</testsuite>
