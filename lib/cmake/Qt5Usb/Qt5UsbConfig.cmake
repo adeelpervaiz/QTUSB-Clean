@@ -5,7 +5,7 @@ endif()
 get_filename_component(_qt5Usb_install_prefix "${CMAKE_CURRENT_LIST_DIR}/../../../" ABSOLUTE)
 
 # For backwards compatibility only. Use Qt5Usb_VERSION instead.
-set(Qt5Usb_VERSION_STRING 0.7.0)
+set(Qt5Usb_VERSION_STRING 0.8.0)
 
 set(Qt5Usb_LIBRARIES Qt5::Usb)
 
@@ -179,8 +179,8 @@ if (NOT TARGET Qt5::Usb)
 
     set(_Qt5Usb_OWN_INCLUDE_DIRS "${_qt5Usb_install_prefix}/include/" "${_qt5Usb_install_prefix}/include/QtUsb")
     set(Qt5Usb_PRIVATE_INCLUDE_DIRS
-        "${_qt5Usb_install_prefix}/include/QtUsb/0.7.0"
-        "${_qt5Usb_install_prefix}/include/QtUsb/0.7.0/QtUsb"
+        "${_qt5Usb_install_prefix}/include/QtUsb/0.8.0"
+        "${_qt5Usb_install_prefix}/include/QtUsb/0.8.0/QtUsb"
     )
 
     foreach(_dir ${_Qt5Usb_OWN_INCLUDE_DIRS})
@@ -223,7 +223,7 @@ if (NOT TARGET Qt5::Usb)
     foreach(_module_dep ${_Qt5Usb_MODULE_DEPENDENCIES})
         if (NOT Qt5${_module_dep}_FOUND)
             find_package(Qt5${_module_dep}
-                0.7.0 ${_Qt5Usb_FIND_VERSION_EXACT}
+                0.8.0 ${_Qt5Usb_FIND_VERSION_EXACT}
                 ${_Qt5Usb_DEPENDENCIES_FIND_QUIET}
                 ${_Qt5Usb_FIND_DEPENDENCIES_REQUIRED}
                 PATHS "${CMAKE_CURRENT_LIST_DIR}/.." NO_DEFAULT_PATH

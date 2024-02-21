@@ -37,7 +37,7 @@ SET usbarch=%ARCH%
 IF "%ARCH%" == "x64" SET vcarch=amd64
 IF "%ARCH%" == "x86" SET usbarch=Win32
 SET PROJDIR=%CD%
-SET BUILDDIR=C:\Users\adeel\Documents\qtusb-build
+SET BUILDDIR=D:\qtusb-build
 SET INSTALLPATH=""
 
 IF NOT "%5"=="" (

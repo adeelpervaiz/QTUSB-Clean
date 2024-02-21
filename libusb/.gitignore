@@ -6,6 +6,10 @@ Makefile.in
 *.la
 *.lo
 *.o
+*.js
+!/tests/webusb-test-shim/*.js
+*.wasm
+*.html
 libtool
 ltmain.sh
 missing
@@ -18,6 +22,7 @@ depcomp
 configure
 aclocal.m4
 compile
+test-driver
 config.guess
 config.h*
 !msvc/config.h
@@ -37,7 +42,13 @@ examples/fxload
 examples/hotplugtest
 examples/sam3u_benchmark
 examples/testlibusb
+tests/init_context
+tests/macos
+tests/set_option
 tests/stress
+tests/stress_mt
+tests/*.log
+tests/*.trs
 android/libs
 android/obj
 *.exe
@@ -48,6 +59,8 @@ doc/api-1.0
 *.opt
 Debug
 Release
+Debug-MT
+Release-MT
 *.db
 *.user
 *.suo
@@ -66,3 +79,6 @@ xcuserdata
 *.xccheckout
 *.xcscmblueprint
 *.xcworkspace
+build/
+tags
+cscope.out

@@ -220,6 +220,9 @@ Makefile: src.pro ..\.qmake.conf ..\.qmake.cache C:\Qt\5.15.2\msvc2019_64\mkspec
 		C:\Qt\5.15.2\msvc2019_64\mkspecs\modules\qt_lib_xmlpatterns.pri \
 		C:\Qt\5.15.2\msvc2019_64\mkspecs\modules\qt_lib_xmlpatterns_private.pri \
 		C:\Qt\5.15.2\msvc2019_64\mkspecs\modules\qt_lib_zlib_private.pri \
+		..\mkspecs\modules-inst\qt_lib_usb.pri \
+		..\mkspecs\modules-inst\qt_lib_usb_private.pri \
+		..\mkspecs\modules\qt_lib_usb.pri \
 		C:\Qt\5.15.2\msvc2019_64\mkspecs\features\qt_functions.prf \
 		C:\Qt\5.15.2\msvc2019_64\mkspecs\features\qt_config.prf \
 		C:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc\qmake.conf \
@@ -400,6 +403,9 @@ C:\Qt\5.15.2\msvc2019_64\mkspecs\modules\qt_lib_xml_private.pri:
 C:\Qt\5.15.2\msvc2019_64\mkspecs\modules\qt_lib_xmlpatterns.pri:
 C:\Qt\5.15.2\msvc2019_64\mkspecs\modules\qt_lib_xmlpatterns_private.pri:
 C:\Qt\5.15.2\msvc2019_64\mkspecs\modules\qt_lib_zlib_private.pri:
+..\mkspecs\modules-inst\qt_lib_usb.pri:
+..\mkspecs\modules-inst\qt_lib_usb_private.pri:
+..\mkspecs\modules\qt_lib_usb.pri:
 C:\Qt\5.15.2\msvc2019_64\mkspecs\features\qt_functions.prf:
 C:\Qt\5.15.2\msvc2019_64\mkspecs\features\qt_config.prf:
 C:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc\qmake.conf:

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QDOCINDEX>
-<INDEX url="http://doc.qt.io/qt-5" title="Qt Usb Reference Documentation" version="0.7.0" project="QtUsb" indexTitle="Qt Usb">
+<INDEX url="http://doc.qt.io/qt-5" title="Qt Usb Reference Documentation" version="0.8.0" project="QtUsb" indexTitle="Qt Usb">
     <namespace name="" status="active" access="public" module="qtusb">
         <function name="qt_getEnumMetaObject" status="internal" access="private" location="qusbdevice.h" filepath="D:/QtUsb/src/usb\qusbdevice.h" lineno="35" meta="plain" virtual="non" const="false" static="false" final="false" override="false" type="const QMetaObject *" signature="const QMetaObject * qt_getEnumMetaObject(QUsbDevice::DeviceSpeed )">
             <parameter type="QUsbDevice::DeviceSpeed" name="" default=""/>

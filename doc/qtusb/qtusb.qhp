@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QtHelpProject version="1.0">
-    <namespace>org.qt-project.qtusb.070</namespace>
+    <namespace>org.qt-project.qtusb.080</namespace>
     <virtualFolder>qtusb</virtualFolder>
-    <metaData name="version" value="0.7.0"/>
-    <customFilter name="QtUsb 0.7.0">
-        <filterAttribute>0.7.0</filterAttribute>
+    <metaData name="version" value="0.8.0"/>
+    <customFilter name="QtUsb 0.8.0">
+        <filterAttribute>0.8.0</filterAttribute>
         <filterAttribute>qtusb</filterAttribute>
     </customFilter>
     <filterSection>
-        <filterAttribute>0.7.0</filterAttribute>
+        <filterAttribute>0.8.0</filterAttribute>
         <filterAttribute>qtrefdoc</filterAttribute>
         <filterAttribute>qtusb</filterAttribute>
         <toc>

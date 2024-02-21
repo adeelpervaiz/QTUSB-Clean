@@ -1,4 +1,4 @@
-QT.usb.VERSION = 0.7.0
+QT.usb.VERSION = 0.8.0
 QT.usb.name = QtUsb
 QT.usb.module = Qt5Usb
 QT.usb.libs = $$QT_MODULE_LIB_BASE
